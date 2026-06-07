@@ -36,7 +36,8 @@ Nocturne focuses on simplicity, speed, and an elegant monochrome design inspired
 
 ### Home
 
-<img width="1436" height="988" alt="Screenshot 2026-06-07 at 9 59 36 PM" src="https://github.com/user-attachments/assets/f209680e-e890-4709-8dc4-4dc55859dbdc" />
+<img width="1436" height="990" alt="Screenshot 2026-06-07 at 10 37 14 PM" src="https://github.com/user-attachments/assets/91842233-a284-466d-8fa4-985b9bba6e05" />
+
 
 ### Vocabulary
 
@@ -119,6 +120,8 @@ Nocturne/
 ├── static/
 │   ├── css/
 │   │   └── style.css
+├── images/
+│   │   └── soviet-bg.jpg
 │   │
 │   └── js/
 │
