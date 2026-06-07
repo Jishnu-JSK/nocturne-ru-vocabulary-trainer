@@ -45,7 +45,7 @@ Nocturne focuses on simplicity, speed, and an elegant monochrome design inspired
 
 ### Practice
 
-<img width="1436" height="988" alt="Screenshot 2026-06-07 at 10 00 54 PM" src="https://github.com/user-attachments/assets/c9421726-d545-4c9d-8106-831062f9ba39" />
+<img width="1436" height="988" alt="Screenshot 2026-06-07 at 10 50 19 PM" src="https://github.com/user-attachments/assets/8685724e-7806-47ab-b4cf-b67e4a300be7" />
 
 ---
 
