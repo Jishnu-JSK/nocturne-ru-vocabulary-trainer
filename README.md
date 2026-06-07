@@ -1,4 +1,4 @@
-# 🇷🇺 Nocturne
+# Nocturne
 
 ### A minimalist Russian vocabulary explorer built with Flask.
 
