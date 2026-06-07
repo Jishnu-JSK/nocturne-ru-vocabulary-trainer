@@ -36,18 +36,15 @@ Nocturne focuses on simplicity, speed, and an elegant monochrome design inspired
 
 ### Home
 
-![Home](<img width="1436" height="988" alt="Screenshot 2026-06-07 at 9 59 36 PM" src="https://github.com/user-attachments/assets/f209680e-e890-4709-8dc4-4dc55859dbdc" />
-)
+<img width="1436" height="988" alt="Screenshot 2026-06-07 at 9 59 36 PM" src="https://github.com/user-attachments/assets/f209680e-e890-4709-8dc4-4dc55859dbdc" />
 
 ### Vocabulary
 
-![Vocabulary](<img width="1436" height="988" alt="Screenshot 2026-06-07 at 9 59 46 PM" src="https://github.com/user-attachments/assets/e258dd24-b8be-4e2b-a0ce-0726d803a1e7" />
-)
+<img width="1436" height="988" alt="Screenshot 2026-06-07 at 9 59 46 PM" src="https://github.com/user-attachments/assets/e258dd24-b8be-4e2b-a0ce-0726d803a1e7" />
 
 ### Practice
 
-![Practice](<img width="1436" height="988" alt="Screenshot 2026-06-07 at 10 00 54 PM" src="https://github.com/user-attachments/assets/c9421726-d545-4c9d-8106-831062f9ba39" />
-)
+<img width="1436" height="988" alt="Screenshot 2026-06-07 at 10 00 54 PM" src="https://github.com/user-attachments/assets/c9421726-d545-4c9d-8106-831062f9ba39" />
 
 ---
 
