@@ -21,7 +21,6 @@ Nocturne focuses on simplicity, speed, and an elegant monochrome design inspired
 * Type the English meaning
 * Instant answer checking
 * Previous / Next navigation
-* Keyboard shortcuts
 * Random card mode
 
 ### ⚡ Lightweight
