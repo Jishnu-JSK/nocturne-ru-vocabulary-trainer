@@ -1,10 +1,37 @@
-
 {% extends 'base.html' %}
 {% block content %}
-<section class="hero">
-<h1>NOCTURNE</h1>
-<p>Russian Vocabulary Explorer</p>
-<p>{{ total }} words available</p>
-<a class="btn" href="/vocabulary">Browse Vocabulary</a>
-</section>
+
+<div class="home-wrapper">
+
+    <div class="home-bg">
+        <img
+            src="/static/images/soviet-bg.jpg"
+            alt=""
+            class="home-bg-img"
+        >
+        <div class="home-bg-overlay"></div>
+    </div>
+
+    <div class="home-content">
+        <section class="hero">
+            <p class="hero-eyebrow">Russian Vocabulary Explorer</p>
+            <h1>NOCTURNE</h1>
+            <p class="hero-sub">{{ total }} words available</p>
+            <a class="btn" href="/vocabulary">Browse Vocabulary</a>
+        </section>
+
+        <section class="wotd-section">
+            <div class="wotd-card">
+                <div class="wotd-content">
+                    <span class="wotd-label">✦ Word of the Day</span>
+                    <h2 class="wotd-russian">{{ wotd_russian }}</h2>
+                    <p class="wotd-english">{{ wotd_english }}</p>
+                    <a class="wotd-practice-btn" href="/practice/{{ wotd_index }}">Practice this word →</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</div>
+
 {% endblock %}
