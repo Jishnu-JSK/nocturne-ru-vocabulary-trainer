@@ -154,8 +154,3 @@ Jishnu Suresh
 
 GitHub: https://github.com/Jishnu-JSK
 
----
-
-## License
-
-MIT License
