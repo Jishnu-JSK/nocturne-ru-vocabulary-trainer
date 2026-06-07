@@ -207,11 +207,6 @@ screenshots/
 
 GitHub: https://github.com/Jishnu-JSK
 
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
