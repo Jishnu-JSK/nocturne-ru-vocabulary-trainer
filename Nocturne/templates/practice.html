@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="practice-container">
+
+    <div class="progress">
+        Card {{ index + 1 }} / {{ total }}
+    </div>
+
+    <div class="practice-card">
+
+        <h1 class="russian-word">
+            {{ word[russian_col] }}
+        </h1>
+
+        <input
+            id="answerInput"
+            type="text"
+            placeholder="Type the English meaning..."
+            autofocus
+        >
+
+        <div class="actions">
+
+            <button onclick="checkAnswer()">
+                Check Answer
+            </button>
+
+            <button onclick="showAnswer()">
+                Show Answer
+            </button>
+
+            <a
+                class="random-btn"
+                href="/practice/random"
+            >
+                🎲 Random
+            </a>
+
+        </div>
+
+        <div id="result"></div>
+
+        <div class="navigation">
+
+            {% if index > 0 %}
+            <a href="/practice/{{ index - 1 }}">
+                ← Previous
+            </a>
+            {% endif %}
+
+            {% if index < total - 1 %}
+            <a href="/practice/{{ index + 1 }}">
+                Next →
+            </a>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const correctAnswer =
+`{{ word[english_col] }}`
+.toLowerCase()
+.trim();
+
+const currentIndex =`{{ index }}`;
+
+const totalCards =`{{ total }}`;
+
+function checkAnswer() {
+
+    const userAnswer =
+    document
+    .getElementById("answerInput")
+    .value
+    .toLowerCase()
+    .trim();
+
+    const result =
+    document.getElementById("result");
+
+    // FIX: was referencing undefined `normalizedAnswer` — use `correctAnswer` instead
+    const acceptedAnswers =
+    correctAnswer
+    .split(/[;,/]/)
+    .map(answer => answer.trim())
+    .filter(Boolean);
+
+    if (
+        userAnswer.length > 0 &&
+        (acceptedAnswers.includes(userAnswer) || correctAnswer.includes(userAnswer))
+    ) {
+
+        result.innerHTML = `
+            <div class="correct">
+                ✓ Correct
+            </div>
+        `;
+
+    } else {
+
+        result.innerHTML = `
+            <div class="wrong">
+
+                ✗ Incorrect
+
+                <br><br>
+
+                Correct Answer:
+
+                <strong>
+                    ${correctAnswer}
+                </strong>
+
+            </div>
+        `;
+    }
+}
+
+function showAnswer(){
+
+    document
+    .getElementById("result")
+    .innerHTML = `
+        <div class="answer">
+            ${correctAnswer}
+        </div>
+    `;
+}
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Enter"){
+            checkAnswer();
+        }
+
+        if(event.key === "ArrowRight"){
+
+            if(currentIndex < totalCards - 1){
+
+                window.location.href =
+                "/practice/" +
+                (currentIndex + 1);
+            }
+        }
+
+        if(event.key === "ArrowLeft"){
+
+            if(currentIndex > 0){
+
+                window.location.href =
+                "/practice/" +
+                (currentIndex - 1);
+            }
+        }
+    }
+);
+
+</script>
+
+{% endblock %}

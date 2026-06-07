@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nocturne</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav>
+<a href="/">NOCTURNE</a>
+<div>
+<a href="/vocabulary">Vocabulary</a>
+<a href="/practice/0">Practice</a>
+</div>
+</nav>
+<main>{% block content %}{% endblock %}</main>
+</body>
+</html>

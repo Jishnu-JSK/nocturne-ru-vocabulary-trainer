@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<form>
+<input name="q" placeholder="Search..." value="{{query}}">
+</form>
+<div class="grid">
+{% for word in words %}
+<div class="card">
+<h3>{{ word[russian_col] }}</h3>
+<p>{{ word[english_col] }}</p>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
