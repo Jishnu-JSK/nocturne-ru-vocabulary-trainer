@@ -144,10 +144,8 @@ Nocturne/
 
 * Word detail pages
 * Favorites system
-* Daily word
 * Pronunciation audio
 * Progress tracking
-* Spaced repetition
 
 ---
 
